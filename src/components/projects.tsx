@@ -1,4 +1,5 @@
 import React from "react";
+import daysEnd from "../images/days-end.jpg";
 
 function Projects() {
   return (
@@ -26,17 +27,21 @@ function Projects() {
         <strong>Built Environment</strong>
       </p>
       <p>MFAH</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>IAS</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>Day's End</p>
-      <img
-        src="/Users/stephanie/Documents/Projects/React/personal-website/sb-website/src/images/days-end.jpg"
-        alt="Day's End"
-      />
+      <img src={daysEnd} alt="Day's End" />
       <p>SLT</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>MFAH</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>LMC</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>MPK22</p>
+      <img src={daysEnd} alt="Day's End" />
       <p>G5 Garage</p>
+      <img src={daysEnd} alt="Day's End" />
     </nav>
   );
 }
