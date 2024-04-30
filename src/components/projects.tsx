@@ -30,7 +30,7 @@ function Projects() {
       <p>Day's End</p>
       <img
         src="/Users/stephanie/Documents/Projects/React/personal-website/sb-website/src/images/days-end.jpg"
-        alt="Day's End Photo"
+        alt="Day's End"
       />
       <p>SLT</p>
       <p>MFAH</p>
