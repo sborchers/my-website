@@ -1,5 +1,5 @@
 import React from "react";
-import daysEnd from "../images/days-end.jpg";
+import BuiltProjects from "../ProjectCard";
 
 function Projects() {
   return (
@@ -26,22 +26,7 @@ function Projects() {
       <p>
         <strong>Built Environment</strong>
       </p>
-      <p>MFAH</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>IAS</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>Day's End</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>SLT</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>MFAH</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>LMC</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>MPK22</p>
-      <img src={daysEnd} alt="Day's End" />
-      <p>G5 Garage</p>
-      <img src={daysEnd} alt="Day's End" />
+      <BuiltProjects></BuiltProjects>
     </nav>
   );
 }
