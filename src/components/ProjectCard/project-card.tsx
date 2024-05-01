@@ -19,9 +19,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   href,
 }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 300 }}>
       <CardActionArea component="a" href={href} target="_blank">
-        <CardMedia component="img" height="140" image={source} alt={title} />
+        <CardMedia component="img" height="250" image={source} alt={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}

@@ -2,20 +2,21 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .App-header {
   background-color: orangered;
   color: white;
   position: sticky;
-  top: 0;
+  top: 10px;
+  z-index: 1;
 }
 
 .App-content {
-  position: relative;
-  top: 60px;
-  bottom: 100px;
+  height: calc(100vh - 210px);
+  overflow-y: auto;
 }
 
 .App-main {
@@ -23,15 +24,24 @@
 }
 
 .App-footer {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: calc(100% - 20px);
   display: flex;
   justify-content: flex-end;
 }
 
 .App-nav {
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   width: 100%;
+}
+
+body,
+.App,
+.App-header,
+.App-content,
+.App-nav,
+.App-footer {
+  font-family: "Roboto", sans-serif;
 }
