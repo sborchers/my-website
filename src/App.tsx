@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import React from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </div> */}
       <div className="App-content">
         <AboutMe></AboutMe>
+        <Skills></Skills>
         <Projects></Projects>
       </div>
       <div className="App-nav">

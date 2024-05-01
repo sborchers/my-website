@@ -50,7 +50,7 @@ function BuiltProjects() {
         href="https://forell.com/projects/developer-commercial-corp/facebook-mpk-22/"
       ></ProjectCard>
       <ProjectCard
-        title="G5 Garage"
+        title="Bay View Garage"
         copy="Parking Garage"
         source={garage}
         href="https://www.clarkpacific.com/project/bay-view-parking-structure/"
@@ -71,4 +71,7 @@ const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 `;
