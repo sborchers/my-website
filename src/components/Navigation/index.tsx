@@ -1,26 +1,47 @@
 import React from "react";
+import linkedin from "../../icons/linkedin.jpg";
+import github from "../../icons/github.jpg";
+import { Button } from "@mui/material";
 
 function Navigation() {
   return (
-    <nav style={{ position: "fixed" }}>
+    <nav>
       <p>
         <strong>Let's connect!</strong>
       </p>
-      <a
+      <Button
         href="https://www.linkedin.com/in/stephanie-borchers-pe-88987869/"
         target="_blank"
         rel="noopener noreferrer"
+        style={{ textTransform: "none" }}
       >
+        <img
+          src={linkedin}
+          alt="LinkedIn"
+          style={{
+            height: "20px",
+            marginRight: "5px",
+          }}
+        />
         LinkedIn
-      </a>
-      |
-      <a
+      </Button>
+      <Button
         href="https://github.com/sborchers"
         target="_blank"
         rel="noopener noreferrer"
+        style={{ textTransform: "none" }}
       >
+        <img
+          src={github}
+          alt="GitHub"
+          style={{
+            height: "20px",
+            verticalAlign: "middle",
+            marginRight: "5px",
+          }}
+        />
         GitHub
-      </a>
+      </Button>
     </nav>
   );
 }

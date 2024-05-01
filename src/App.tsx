@@ -1,21 +1,33 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import MainContent from "./components/MainContent";
+// import MainContent from "./components/MainContent";
 import Header from "./components/Header";
 import React from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MainContent></MainContent>
-      <AboutMe></AboutMe>
-      <Projects></Projects>
-      <Navigation></Navigation>
-      <Footer />
+      <div className="App-header">
+        <Header />
+      </div>
+      {/* <div className="App-main">
+        <MainContent></MainContent>
+      </div> */}
+      <div className="App-content">
+        <AboutMe></AboutMe>
+        <Skills></Skills>
+        <Projects></Projects>
+      </div>
+      <div className="App-nav">
+        <Navigation></Navigation>
+      </div>
+      <div className="App-footer">
+        <Footer />
+      </div>
     </div>
   );
 }

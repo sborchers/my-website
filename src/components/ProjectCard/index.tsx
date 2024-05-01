@@ -71,4 +71,6 @@ const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 `;

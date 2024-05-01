@@ -2,9 +2,15 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <main>
-      <h2>About Me</h2>
-      <p>
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <h2>About</h2>
+      <p style={{ marginTop: 0, maxWidth: 600 }}>
         I'm Stephanie Borchers, a software engineer with experience in
         web-application development. Before software, I practiced structural
         engineering, and have worked on the structural design of over 15

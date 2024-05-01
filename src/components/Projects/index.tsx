@@ -1,38 +1,40 @@
 import React from "react";
 import BuiltProjects from "../ProjectCard";
+import { Button } from "@mui/material";
+import styled from "styled-components";
 
 function Projects() {
   return (
-    <nav>
+    <nav style={{ marginTop: 30 }}>
       <h2>Projects</h2>
-      <p>
+      <p style={{ marginTop: 30 }}>
         <strong>Software</strong>
       </p>
       <p>In progress :) Watch this space!</p>
-      <a
-        href="https://github.com/sborchers/my-website"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        This Site!
-      </a>
-      {/* |
-      <a
-        href="https://github.com/sborchers/art-gallery-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gallery App
-      </a> */}
-      |
-      <a
-        href="https://github.com/sborchers/TDI-Capstone"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Success Prediction for Airbnb Listings
-      </a>
-      <p>
+      <ProjectsContainer>
+        <Button
+          href="https://github.com/sborchers/my-website"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outlined"
+          style={{
+            textTransform: "none",
+            width: "fit-content",
+          }}
+        >
+          This Site!
+        </Button>
+        <Button
+          href="https://github.com/sborchers/TDI-Capstone"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outlined"
+          style={{ textTransform: "none", width: "fit-content" }}
+        >
+          Success Prediction for Airbnb Listings
+        </Button>
+      </ProjectsContainer>
+      <p style={{ marginTop: 50 }}>
         <strong>Built Environment</strong>
       </p>
       <p>Here's a sample of projects that I've worked on over the years!</p>
@@ -42,3 +44,9 @@ function Projects() {
 }
 
 export default Projects;
+
+const ProjectsContainer = styled.div`
+  display: grid;
+  gap: 20px;
+  place-items: center;
+`;
