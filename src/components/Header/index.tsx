@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header>
+    <header style={{ position: "fixed" }}>
       <h1>Hi! Welcome to my website</h1>
     </header>
   );

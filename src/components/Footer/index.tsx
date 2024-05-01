@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer style={{ position: "fixed" }}>
       <p>&copy; {new Date().getFullYear()} Stephanie Borchers</p>
     </footer>
   );
