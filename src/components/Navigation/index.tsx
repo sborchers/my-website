@@ -2,7 +2,7 @@ import React from "react";
 
 function Navigation() {
   return (
-    <nav style={{ position: "fixed" }}>
+    <nav>
       <p>
         <strong>Let's connect!</strong>
       </p>
