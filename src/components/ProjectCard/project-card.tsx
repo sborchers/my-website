@@ -9,12 +9,18 @@ type ProjectCardProps = {
   title: string;
   copy: string;
   source: string;
+  href: string;
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, copy, source }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  copy,
+  source,
+  href,
+}) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea component="a" href={href} target="_blank">
         <CardMedia component="img" height="140" image={source} alt={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

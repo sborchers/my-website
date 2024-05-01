@@ -1,43 +1,65 @@
 import React from "react";
 import daysEnd from "../../images/days-end.jpg";
+import mfah from "../../images/mfah.jpg";
+import ias from "../../images/ias.jpg";
+import slt from "../../images/slt.jpg";
+import mpk22 from "../../images/mpk22.jpg";
 import motherSon from "../../images/mother-son.jpg";
 import ProjectCard from "./project-card";
 import styled from "styled-components";
+import garage from "../../images/g5Garage.jpg";
+import lmc from "../../images/lmc.jpg";
 
 function BuiltProjects() {
   return (
     <ProjectsContainer>
       <ProjectCard
         title="MFAH"
-        copy="Museum (New Construction)"
-        source={daysEnd}
+        copy="Museum"
+        source={mfah}
+        href="https://www.nordenson.com/projects/museum-of-fine-arts-houston-and-glassell-school-of-art"
       ></ProjectCard>
       <ProjectCard
         title="IAS"
-        copy="Institute (New Construction)"
-        source={daysEnd}
+        copy="Academic Building"
+        source={ias}
+        href="https://www.ias.edu/default/tags/rubenstein-commons"
       ></ProjectCard>
       <ProjectCard
         title="Day's End"
         copy="Sculpture"
         source={daysEnd}
+        href="https://www.nordenson.com/projects/days-end"
       ></ProjectCard>
       <ProjectCard
-        title="Mother and Son"
+        title="John Palach Memorial"
         copy="Sculpture"
         source={motherSon}
+        href="https://cooper.edu/architecture/news/memorial-jan-palach-designed-john-hejduk-unveiled-prague"
       ></ProjectCard>
-      <ProjectCard title="LMC" copy="Office" source={daysEnd}></ProjectCard>
-      <ProjectCard title="MPK22" copy="Office" source={daysEnd}></ProjectCard>
+      <ProjectCard
+        title="LinkedIn Campus"
+        copy="Office"
+        source={lmc}
+        href="https://forell.com/projects/developer-commercial-corp/linkedin-middlefield-campus/"
+      ></ProjectCard>
+      <ProjectCard
+        title="Meta MPK22 Campus"
+        copy="Office"
+        source={mpk22}
+        href="https://forell.com/projects/developer-commercial-corp/facebook-mpk-22/"
+      ></ProjectCard>
       <ProjectCard
         title="G5 Garage"
         copy="Parking Garage"
-        source={daysEnd}
+        source={garage}
+        href="https://www.clarkpacific.com/project/bay-view-parking-structure/"
       ></ProjectCard>
       <ProjectCard
         title="SLT"
-        copy="Temple (Renovation)"
-        source={daysEnd}
+        copy="Historic Renovation"
+        source={slt}
+        href="https://www.deseret.com/2019/4/19/20671272/here-s-how-the-salt-lake-temple-s-base-isolation-system-will-protect-it-from-earthquakes/"
       ></ProjectCard>
     </ProjectsContainer>
   );

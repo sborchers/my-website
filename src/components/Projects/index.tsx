@@ -8,6 +8,7 @@ function Projects() {
       <p>
         <strong>Software</strong>
       </p>
+      <p>In progress :) Watch this space!</p>
       <a
         href="https://github.com/sborchers/my-website"
         target="_blank"
@@ -34,6 +35,7 @@ function Projects() {
       <p>
         <strong>Built Environment</strong>
       </p>
+      <p>Here's a sample of projects that I've worked on over the years!</p>
       <BuiltProjects></BuiltProjects>
     </nav>
   );
