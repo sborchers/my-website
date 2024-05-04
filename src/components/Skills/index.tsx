@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import react from "../../icons/react.jpg";
-import angular from "../../icons/angular.jpg";
-import ts from "../../icons/ts.jpg";
-import js from "../../icons/js.jpg";
-import python from "../../icons/python.jpg";
-import docker from "../../icons/docker.jpg";
-import go from "../../icons/go.jpg";
-import graphql from "../../icons/graphql.jpg";
-import jupyter from "../../icons/jupyter.jpg";
-import postgresql from "../../icons/postgresql.jpg";
-import auth0 from "../../icons/auth0.jpg";
-import gcp from "../../icons/gcp.jpg";
-import html from "../../icons/html.png";
-import css from "../../icons/css.png";
+import react from "../../icons/skills/react.jpg";
+import angular from "../../icons/skills/angular.jpg";
+import ts from "../../icons/skills/ts.jpg";
+import js from "../../icons/skills/js.jpg";
+import python from "../../icons/skills/python.jpg";
+import docker from "../../icons/skills/docker.jpg";
+import go from "../../icons/skills/go.jpg";
+import graphql from "../../icons/skills/graphql.jpg";
+import jupyter from "../../icons/skills/jupyter.jpg";
+import postgresql from "../../icons/skills/postgresql.jpg";
+import auth0 from "../../icons/skills/auth0.jpg";
+import gcp from "../../icons/skills/gcp.jpg";
+import html from "../../icons/skills/html.png";
+import css from "../../icons/skills/css.png";
 
 function Skills() {
   return (
