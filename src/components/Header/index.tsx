@@ -3,18 +3,21 @@ import { AppBar, IconButton } from "@mui/material";
 import { ReactComponent as Moon } from "../../icons/moon.svg";
 import { ReactComponent as Sun } from "../../icons/sun.svg";
 
-function Header() {
-  const [darkMode, setDarkMode] = useState(false);
+interface HeaderProps {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+}
 
+const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   const handleClick = () => {
-    setDarkMode(!darkMode);
+    toggleDarkMode();
   };
 
   return (
     <AppBar
       position="static"
       style={{
-        backgroundColor: "orangered",
+        backgroundColor: darkMode ? "purple" : "orangered",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
@@ -29,6 +32,6 @@ function Header() {
       </IconButton>
     </AppBar>
   );
-}
+};
 
 export default Header;

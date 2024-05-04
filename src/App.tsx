@@ -3,16 +3,21 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 // import MainContent from "./components/MainContent";
 import Header from "./components/Header";
-import React from "react";
+import React, { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? "darkMode" : ""}`}>
       <div className="App-header">
-        <Header />
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
       {/* <div className="App-main">
         <MainContent></MainContent>
