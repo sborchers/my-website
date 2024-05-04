@@ -37,7 +37,10 @@ function Projects() {
       <p style={{ marginTop: 50 }}>
         <strong>Built Environment</strong>
       </p>
-      <p>Here's a sample of projects that I've worked on over the years!</p>
+      <p>
+        Here's a sample of projects that I've contributed to as a structural
+        engineer over the years!
+      </p>
       <BuiltProjects></BuiltProjects>
     </nav>
   );
