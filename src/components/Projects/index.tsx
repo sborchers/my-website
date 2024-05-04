@@ -2,12 +2,13 @@ import React from "react";
 import BuiltProjects from "../ProjectCard";
 import { Button } from "@mui/material";
 import styled from "styled-components";
+import { PageSection } from "../Navigation";
 
 function Projects() {
   return (
-    <nav style={{ marginTop: 30 }}>
+    <nav style={{ marginTop: 70 }}>
       <h2>Projects</h2>
-      <p style={{ marginTop: 30 }}>
+      <p id={PageSection.Software} style={{ paddingTop: 30 }}>
         <strong>Software</strong>
       </p>
       <p>In progress :) Watch this space!</p>
@@ -34,10 +35,13 @@ function Projects() {
           Success Prediction for Airbnb Listings
         </Button>
       </ProjectsContainer>
-      <p style={{ marginTop: 50 }}>
+      <p id={PageSection.Built} style={{ marginTop: 20, paddingTop: 30 }}>
         <strong>Built Environment</strong>
       </p>
-      <p>Here's a sample of projects that I've worked on over the years!</p>
+      <p>
+        Here's a sample of projects that I've contributed to as a structural
+        engineer over the years!
+      </p>
       <BuiltProjects></BuiltProjects>
     </nav>
   );

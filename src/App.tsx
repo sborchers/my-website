@@ -1,7 +1,6 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-// import MainContent from "./components/MainContent";
 import Header from "./components/Header";
 import React, { useState } from "react";
 import AboutMe from "./components/AboutMe";
@@ -19,13 +18,10 @@ function App() {
       <div className="App-header">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
-      {/* <div className="App-main">
-        <MainContent></MainContent>
-      </div> */}
       <div className="App-content">
-        <AboutMe></AboutMe>
-        <Skills></Skills>
-        <Projects></Projects>
+        <AboutMe />
+        <Skills />
+        <Projects />
       </div>
       <div className="App-nav">
         <Navigation></Navigation>

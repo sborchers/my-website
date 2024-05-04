@@ -3,6 +3,13 @@ import linkedin from "../../icons/linkedin.jpg";
 import github from "../../icons/github.jpg";
 import { Button } from "@mui/material";
 
+export enum PageSection {
+  About = "about",
+  Skills = "skills",
+  Software = "software",
+  Built = "built",
+}
+
 function Navigation() {
   return (
     <nav>

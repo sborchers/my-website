@@ -27,10 +27,6 @@
   overflow-y: auto;
 }
 
-.App-main {
-  top: 80px;
-}
-
 .App-footer {
   position: absolute;
   bottom: 0px;
