@@ -26,6 +26,18 @@ function Projects() {
           This Site!
         </Button>
         <Button
+          href="https://stephborch-weather-app.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outlined"
+          style={{
+            textTransform: "none",
+            width: "fit-content",
+          }}
+        >
+          Weather App
+        </Button>
+        <Button
           href="https://github.com/sborchers/TDI-Capstone"
           target="_blank"
           rel="noopener noreferrer"
