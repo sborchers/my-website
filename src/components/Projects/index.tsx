@@ -38,6 +38,18 @@ function Projects() {
           Weather App
         </Button>
         <Button
+          href="https://e42b-2604-2000-8fc0-0-cdb6-9853-c4bf-ba75.ngrok-free.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outlined"
+          style={{
+            textTransform: "none",
+            width: "fit-content",
+          }}
+        >
+          Image Search
+        </Button>
+        <Button
           href="https://github.com/sborchers/TDI-Capstone"
           target="_blank"
           rel="noopener noreferrer"
