@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
       <AppBar
         position="static"
         style={{
-          backgroundColor: darkMode ? "purple" : "orangered",
+          backgroundColor: darkMode ? "purple" : "#0AA",
           flexDirection: "row",
           padding: "10px",
           justifyContent: "space-between",
