@@ -64,31 +64,42 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           noWrap
           sx={{
             mr: 2,
-            display: { xs: "none", md: "flex" },
+            display: { xs: "none", sm: "flex" },
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".3rem",
+            paddingLeft: "20px",
           }}
         >
           StephBorch
         </Typography>
-        <Box
-          sx={{
-            flexGrow: 1,
-            justifyContent: "space-between",
-            maxWidth: 400,
-            display: { xs: "none", md: "flex" },
-          }}
-        >
-          <MenuItem onClick={() => scrollToSection(PageSection.About)}>
-            About
-          </MenuItem>
-          <MenuItem onClick={() => scrollToSection(PageSection.Skills)}>
-            Skills
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>Projects</MenuItem>
-        </Box>
-        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <div style={{ display: "flex" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "space-between",
+              maxWidth: 260,
+              display: { xs: "none", sm: "flex" },
+              marginRight: "40px",
+            }}
+          >
+            <MenuItem onClick={() => scrollToSection(PageSection.About)}>
+              About
+            </MenuItem>
+            <MenuItem onClick={() => scrollToSection(PageSection.Skills)}>
+              Skills
+            </MenuItem>
+            <MenuItem onClick={handleOpen}>Projects</MenuItem>
+          </Box>
+          <IconButton
+            size="large"
+            sx={{ display: { xs: "none", sm: "flex" } }}
+            onClick={handleClick}
+          >
+            {darkMode ? <Sun /> : <Moon />}
+          </IconButton>
+        </div>
+        <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -114,7 +125,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
-              display: { xs: "block", md: "none" },
+              display: { xs: "block", sm: "none" },
             }}
           >
             <MenuItem onClick={() => scrollToSection(PageSection.About)}>
@@ -131,7 +142,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           noWrap
           sx={{
             mr: 2,
-            display: { xs: "flex", md: "none" },
+            display: { xs: "flex", sm: "none" },
             flexGrow: 1,
             fontFamily: "monospace",
             fontWeight: 700,
@@ -140,7 +151,11 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         >
           StephBorch
         </Typography>
-        <IconButton size="large" onClick={handleClick}>
+        <IconButton
+          size="large"
+          sx={{ display: { xs: "flex", sm: "none" } }}
+          onClick={handleClick}
+        >
           {darkMode ? <Sun /> : <Moon />}
         </IconButton>
       </AppBar>
