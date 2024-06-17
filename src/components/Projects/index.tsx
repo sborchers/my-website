@@ -38,7 +38,7 @@ function Projects() {
           Weather App
         </Button>
         <Button
-          href="https://merry-nominally-dassie.ngrok-free.app/"
+          href="https://sb-image-search.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           variant="outlined"
