@@ -58,6 +58,7 @@ const SoftwareProjectCard: React.FC<ProjectCardProps> = ({
               <a href={skill.href} target="_blank" rel="noopener noreferrer">
                 <img
                   src={skill.source}
+                  alt={skill.source}
                   style={{ height: 24, paddingRight: 8 }}
                 />
               </a>
