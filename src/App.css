@@ -22,7 +22,7 @@
 }
 
 .App-content {
-  height: calc(100vh - 210px);
+  height: calc(100vh - 168px);
   overflow-y: auto;
 }
 
@@ -36,8 +36,9 @@
 
 .App-nav {
   position: absolute;
-  bottom: 50px;
+  bottom: 8px;
   width: 100%;
+  z-index: 1;
 }
 
 body,

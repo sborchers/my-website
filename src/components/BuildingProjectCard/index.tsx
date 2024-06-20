@@ -1,14 +1,14 @@
 import React from "react";
-import daysEnd from "../../images/days-end.jpg";
-import mfah from "../../images/mfah.jpg";
-import ias from "../../images/ias.jpg";
-import slt from "../../images/slt.jpg";
-import mpk22 from "../../images/mpk22.jpg";
-import motherSon from "../../images/mother-son.jpg";
-import ProjectCard from "./project-card";
+import daysEnd from "../../images/buildings/days-end.jpg";
+import mfah from "../../images/buildings/mfah.jpg";
+import ias from "../../images/buildings/ias.jpg";
+import slt from "../../images/buildings/slt.jpg";
+import mpk22 from "../../images/buildings/mpk22.jpg";
+import motherSon from "../../images/buildings/mother-son.jpg";
+import ProjectCard from "./building-project-card";
 import styled from "styled-components";
-import garage from "../../images/g5Garage.jpg";
-import lmc from "../../images/lmc.jpg";
+import garage from "../../images/buildings/g5Garage.jpg";
+import lmc from "../../images/buildings/lmc.jpg";
 
 function BuiltProjects() {
   return (

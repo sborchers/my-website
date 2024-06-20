@@ -12,7 +12,7 @@ type ProjectCardProps = {
   href: string;
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const BuildingProjectCard: React.FC<ProjectCardProps> = ({
   title,
   copy,
   source,
@@ -35,4 +35,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   );
 };
 
-export default ProjectCard;
+export default BuildingProjectCard;
